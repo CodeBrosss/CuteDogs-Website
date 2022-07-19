@@ -1,0 +1,21 @@
+{
+  "name": "cutedogs-website",
+  "version": "1.0.0",
+  "description": "A website for dog specific content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeBrosss/CuteDogs-Website.git"
+  },
+  "keywords": [],
+  "author": "Onubogu Ikemefuna C.",
+  "author2": "Egbuna Great",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeBrosss/CuteDogs-Website/issues"
+  },
+  "homepage": "https://github.com/CodeBrosss/CuteDogs-Website#readme"
+}
