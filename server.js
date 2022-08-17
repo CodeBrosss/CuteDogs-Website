@@ -7,6 +7,7 @@ const app = express();
 const expressLayouts = require('express-ejs-layouts'); //import view layout package
 
 const indexRouter = require('./routes/index') // import routes
+const authRouter = require('./routes/auth.route')
 
 // SET CONFIGURATIONS
 app.set('view engine', 'ejs') // set ejs as view engine
@@ -14,6 +15,10 @@ app.set('views', __dirname + '/views'); // set path to frontend views
 app.set('layout', __dirname + '/layouts/layout') // set layout file
 app.use(expressLayouts)
 app.use(express.static('public'))
+
+// body parser
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // CONNECT TO MONGO DB
 const mongoose = require('mongoose'); // Import mongoose lib
@@ -25,5 +30,10 @@ db.on('error', error => console.error(error)) // if error print error
 db.once('open', () => console.log('connected to MongoDB')) // if connected print connected...
 
 app.use('/', indexRouter)
+app.use('/auth', authRouter)
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server running on port ${process.env.PORT}`)
+})
+
+module.exports = app;

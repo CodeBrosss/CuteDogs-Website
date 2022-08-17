@@ -7,11 +7,6 @@ let navEl = document.getElementById("nav-toggle")
  }   
 
 
-/*navEl.addEventListener('click', () => {
-    document.body.classList.toggle("nav-open")
-
-})*/
-// registtration data
 let firstName = document.getElementById("first-name")
 let secondName = document.getElementById("second-name")
 let userName = document.getElementById("user-name")
@@ -40,13 +35,3 @@ regBtn.addEventListener("click", () => {
     }
 
 })
-
-/* login data */
-/*let login = document.getElementById("login")
-let loginStatus = document.getElementById("login-status")
-let loginPassowrd =document.getElementById("login-password")
-let loginUsername = document.getElementById("login-username")
-
-login.addEventListener('click', ()=> {
-    loginStatus.textContent = "hello"
-})*/
