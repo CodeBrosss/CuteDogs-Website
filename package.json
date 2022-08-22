@@ -12,6 +12,7 @@
     "url": "git+https://github.com/CodeBrosss/CuteDogs-Website.git"
   },
   "keywords": [],
+  "proxy": "https://cat-fact.herokuapp.com/",
   "author": "Onubogu Ikemefuna C.",
   "author2": "Egbuna Great",
   "license": "ISC",
@@ -23,12 +24,11 @@
     "atlas": "^1.0.0-alpha.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.1",
-    "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "express-ejs-layouts": "^2.5.1",
     "joi": "^17.6.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.5",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7"
   }
 }
