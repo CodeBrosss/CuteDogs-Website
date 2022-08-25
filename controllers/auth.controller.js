@@ -20,7 +20,7 @@ const signUp = async(req, res, next) => {
     )
 
     const hashedPass = await hashedPassword(req.body.password);
-    console.log(hashedPass);
+    
     //if user doesn't exist, create new user
     const newUser = await User.create({
         firstName: req.body.firstName,
